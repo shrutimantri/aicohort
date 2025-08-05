@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Master Class Cohort September 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      color: #222;
+    }
+    .header {
+      background: linear-gradient(90deg, #4f8cff 60%, #6ee7b7 100%);
+      color: #fff;
+      padding: 2.5rem 1rem 1.5rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+    .header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+    }
+    .header p {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    .offer-section,
+    .schedule-section,
+    .price-banner,
+    .register-section,
+    .author-section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      border-radius: 1rem;
+      padding: 2rem;
+    }
+    .offer-section {
+      background: #fff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+    .offer-section h2 {
+      color: #4f8cff;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .offer-section ul {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      margin-left: 1.5rem;
+    }
+    .schedule-section {
+      background: #f9fafb;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .schedule-section h2 {
+      color: #2563eb;
+      margin-bottom: 1rem;
+      font-size: 1.7rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 0.8rem;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    th {
+      background: #e0e7ff;
+      color: #1e293b;
+    }
+    .price-banner {
+      background: linear-gradient(90deg, #f59e42 60%, #f43f5e 100%);
+      color: #fff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+      text-align: center;
+      font-size: 1.7rem;
+      position: relative;
+    }
+    .price-banner .old-price {
+      text-decoration: line-through;
+      color: #ffe4e6;
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
+    .price-banner .new-price {
+      font-weight: bold;
+      font-size: 2.2rem;
+      color: #fff;
+      margin-right: 0.5rem;
+    }
+    .register-section {
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      text-align: center;
+    }
+    .register-section h2 {
+      color: #f43f5e;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .register-section a {
+      display: inline-block;
+      background: #4f8cff;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 2rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: background 0.2s;
+    }
+    .register-section a:hover {
+      background: #2563eb;
+    }
+    .register-section .limited {
+      color: #f59e42;
+      font-weight: bold;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    .author-section {
+      background: #f9fafb;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .author-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #e0e7ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      flex-shrink: 0;
+    }
+    .author-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .author-desc {
+      flex: 1;
+    }
+    .author-desc h3 {
+      margin: 0 0 0.5rem 0;
+      color: #4f8cff;
+      font-size: 1.3rem;
+    }
+    .author-desc p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #374151;
+    }
+    @media (max-width: 700px) {
+      .author-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+      }
+      .author-img {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>AI Master Class Cohort<br>September 2025</h1>
+    <p>Empowering Engineers for the AI Revolution</p>
+  </div>
+
+  <section class="offer-section">
+    <h2>What This Cohort Offers</h2>
+    <ul>
+      <li>Comprehensive coverage of all essential AI concepts, from fundamentals to advanced topics.</li>
+      <li>Hands-on sessions to build real-world AI applications and tools.</li>
+      <li>Guidance to become proficient in AI Engineering and ready for the upcoming AI revolution.</li>
+      <li>Learn to efficiently use AI and develop full-fledged AI-based applications using agents and MCP servers.</li>
+      <li>Interactive classes, doubt-solving sessions, and practical assignments.</li>
+    </ul>
+  </section>
+
+  <section class="schedule-section">
+    <h2>Cohort Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Day</th>
+          <th>Session Time</th>
+          <th>Session Type</th>
+        </tr>
+      </thead>
+      <tbody id="schedule-table">
+        <!-- JavaScript will populate this -->
+      </tbody>
+    </table>
+    <script>
+      // Populate schedule table dynamically
+      const schedule = [
+        { date: '30th August, 2025', day: 'Saturday', time: '8:30am - 10:00am', type: 'Virtual Class' },
+        { date: '31st August, 2025', day: 'Sunday', time: '8:30am - 10:00am', type: 'Virtual Class' },
+        { date: '6th September, 2025', day: 'Saturday', time: '8:30am - 10:00am', type: 'Virtual Class' },
+        { date: '7th September, 2025', day: 'Sunday', time: '8:30am - 10:00am', type: 'Virtual Class' },
+        { date: '7th September, 2025', day: 'Sunday', time: '4:00pm - 5:30pm', type: 'Doubt Solving' },
+        { date: '13th September, 2025', day: 'Saturday', time: '8:30am - 10:00am', type: 'Virtual Class' },
+        { date: '14th September, 2025', day: 'Sunday', time: '8:30am - 10:00am', type: 'Virtual Class' },
+        { date: '20th September, 2025', day: 'Saturday', time: '8:30am - 10:00am', type: 'Virtual Class' },
+        { date: '21st September, 2025', day: 'Sunday', time: '8:30am - 10:00am', type: 'Virtual Class' },
+        { date: '21st September, 2025', day: 'Sunday', time: '4:00pm - 5:30pm', type: 'Doubt Solving' },
+      ];
+      const tbody = document.getElementById('schedule-table');
+      schedule.forEach(s => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${s.date}</td><td>${s.day}</td><td>${s.time}</td><td>${s.type}</td>`;
+        tbody.appendChild(tr);
+      });
+    </script>
+  </section>
+
+  <div class="price-banner">
+    <span class="old-price">₹14,999/-</span>
+    <span class="new-price">₹9,999/-<sup>*</sup></span>
+    <span>for the entire cohort!</span>
+    <div    style="font-size:0.95rem; margin-top:0.7rem; color:#ffe4e6;">
+      <em><sup>*</sup>You will incur a small extra cost for using the API key to connect to LLM models. The cost depends completely on your usage of the API keys.</em>
+      <br>
+      <em><sup>*</sup>The fees are non-refundable.</em>
+    </div>
+  </div>
+
+  <section class="register-section">
+    <h2>Register Now</h2>
+    <p>Only <span class="limited">30 seats</span> per cohort! Registrations close on <strong>25th August, 2025</strong>.</p>
+    <a href="https://dummy-registration-link.com" target="_blank">Register Here</a>
+  </section>
+
+  <section class="author-section">
+    <div class="author-img">
+      <img src="./images/shruti_mantri.jpeg" alt="Author Image">
+    </div>
+    <div class="author-desc">
+      <h3>About the Author</h3>
+      <p>
+        <strong>Shruti Mantri</strong> is a seasoned developer with over a decade of engineering experience. 
+        She is proficient in backend engineering, data engineering and AI development. She has worked in multiple 
+        leading companies like Flipkart, Amazon, and Twitter to name a few. She has also worked at Moveworks which 
+        is a leading AI company in the enterprise space.
+        <br>
+        <br>
+        Having mentored hundreds of engineers, Shruti is passionate about making AI accessible and practical for all. 
+        Join the cohort to learn from real-world projects and expert guidance!
+      </p>
+    </div>
+  </section>
+</body>
+</html>
