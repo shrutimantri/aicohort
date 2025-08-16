@@ -242,6 +242,92 @@
     </div>
   </div>
 
+  <section class="prerequisites-section" style="max-width:1100px; margin:2rem auto; background:#fff; border-radius:1rem; box-shadow:0 2px 12px rgba(0,0,0,0.07); padding:2rem;">
+    <h2 style="color:#4f8cff; margin-bottom:1rem; font-size:1.5rem;">Prerequisites</h2>
+    <ul style="font-size:1.15rem; line-height:1.7; margin-left:1.5rem;">
+      <li>Basic knowledge of Python</li>
+    </ul>
+  </section>
+
+  <section class="curriculum-section" style="max-width:1100px; margin:2rem auto; background:#fff; border-radius:1rem; box-shadow:0 2px 12px rgba(0,0,0,0.07); padding:2rem;">
+    <h2 style="color:#4f8cff; margin-bottom:1.5rem; font-size:1.7rem;">Curriculum</h2>
+    <div id="curriculum-tabs" style="display:flex; gap:1rem; margin-bottom:1.5rem;">
+      <button class="curriculum-tab" data-week="1" style="flex:1; padding:0.8rem; border:none; border-radius:0.7rem; background:#e0e7ff; color:#2563eb; font-size:1.1rem; font-weight:600; cursor:pointer;">Week 1</button>
+      <button class="curriculum-tab" data-week="2" style="flex:1; padding:0.8rem; border:none; border-radius:0.7rem; background:#e0e7ff; color:#2563eb; font-size:1.1rem; font-weight:600; cursor:pointer;">Week 2</button>
+      <button class="curriculum-tab" data-week="3" style="flex:1; padding:0.8rem; border:none; border-radius:0.7rem; background:#e0e7ff; color:#2563eb; font-size:1.1rem; font-weight:600; cursor:pointer;">Week 3</button>
+      <button class="curriculum-tab" data-week="4" style="flex:1; padding:0.8rem; border:none; border-radius:0.7rem; background:#e0e7ff; color:#2563eb; font-size:1.1rem; font-weight:600; cursor:pointer;">Week 4</button>
+    </div>
+    <div id="curriculum-content" style="font-size:1.15rem; line-height:1.7;">
+      <!-- Content will be injected by JS -->
+    </div>
+    <div style="font-size:0.98rem; color:#f43f5e; margin-top:1.2rem;"><em><sup>*</sup>In case you missed any class, the recordings of the class will be made available for a limited duration.</em></div>
+    <script>
+      const curriculumData = {
+        1: `
+          <strong>Lets start with Basics</strong><br>
+          <ul>
+            <li>Introduction to Generative AI</li>
+            <li>Introduction to LLMs</li>
+            <li>Prompt Engineering</li>
+          </ul>
+          <strong>RAG in action</strong><br>
+          <ul>
+            <li>Introduction to Vector Databases</li>
+            <li>What is RAG?</li>
+            <li>Implementing RAG</li>
+          </ul>
+        `,
+        2: `
+          <strong>Agents and MCP Servers: The Beginning</strong><br>
+          <ul>
+            <li>Introduction to Agents</li>
+            <li>Building Agents</li>
+            <li>Introduction to MCP Servers</li>
+            <li>Using MCP Servers</li>
+            <li>Building MCP Servers</li>
+            <li>Integrating MCP Servers with Agent</li>
+          </ul>
+        `,
+        3: `
+          <strong>Agents and MCP Servers: Advanced</strong><br>
+          <ul>
+            <li>Different types of Agents</li>
+            <li>What are Sub-Agents?</li>
+            <li>What are Remote Agents?</li>
+            <li>Implementing A2A protocol</li>
+          </ul>
+        `,
+        4: `
+          <strong>Using AI tools</strong><br>
+          <ul>
+            <li>Vibe Engineering</li>
+            <li>Using Agent-based tools: VS Code, Claude</li>
+            <li>Github Coding Agent</li>
+          </ul>
+          <strong>Advanced AI Concepts</strong><br>
+          <ul>
+            <li>Agentic RAG</li>
+            <li>Multi-modal AI tools</li>
+          </ul>
+        `
+      };
+      const curriculumContent = document.getElementById('curriculum-content');
+      const tabButtons = document.querySelectorAll('.curriculum-tab');
+      function showWeek(week) {
+        curriculumContent.innerHTML = curriculumData[week];
+        tabButtons.forEach(btn => btn.style.background = '#e0e7ff');
+        document.querySelector(`.curriculum-tab[data-week="${week}"]`).style.background = '#4f8cff';
+        document.querySelector(`.curriculum-tab[data-week="${week}"]`).style.color = '#fff';
+      }
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          showWeek(btn.getAttribute('data-week'));
+        });
+      });
+      showWeek(1);
+    </script>
+  </section>
+
   <section class="register-section">
     <h2>Register Now</h2>
     <p>Only <span class="limited">30 seats</span> per cohort! Registrations close on <strong>25th August, 2025</strong>.</p>
